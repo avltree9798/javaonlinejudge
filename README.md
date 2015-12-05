@@ -17,9 +17,9 @@ Installation:
 - Run your webserver application and enjoy
 
 For User Testing:
-[Admin role]
 - username : javatar98
 - password : javatar
-[User role]
+ 
+
 - username : test
 - password : test
