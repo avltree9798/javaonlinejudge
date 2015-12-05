@@ -1,14 +1,14 @@
 # javaonlinejudge
 Online Judge for Java created using JSP + MYSQL
 Features :
-Multiple Role (admin/user)
-Scoreboard
-Problem Description
+-Multiple Role (admin/user)
+-Scoreboard
+-Problem Description
 
 Requirements:
-Webserver running Java (preferably Java 1.8)
-Java Development Kit
-MySQL Database Server
+-Webserver running Java (preferably Java 1.8)
+-Java Development Kit
+-MySQL Database Server
 
 Installation:
 - Download the code from Release page : https://github.com/javatar98/javaonlinejudge/releases
@@ -18,8 +18,8 @@ Installation:
 
 For User Testing:
 [Admin role]
-username : javatar98
-password : javatar
+-username : javatar98
+-password : javatar
 [User role]
-username : test
-password : test
+-username : test
+-password : test
