@@ -64,15 +64,19 @@
                 }else{
                     verdict = "Wrong Answer";
                 }
-                st.executeUpdate("INSERT INTO submission(id,submission_date,id_problem,id_user,verdict) VALUES("+noSubmit+",'"+tanggal+"',"+id+",1,'"+verdict+"')");
+                //out.print(answer.replaceAll("\\s","")+"<br/>"+answerFromCase.replaceAll("\\s",""));
+                st.executeUpdate("INSERT INTO submission(id,submission_date,id_problem,id_user,verdict) VALUES("+noSubmit+",'"+tanggal+"',"+id+","+((ResultSet)session
+                        .getAttribute("id_user")).getString("id")+",'"+verdict+"')");
                 out.print(verdict);
             }else{
-                st.executeUpdate("INSERT INTO submission(id,submission_date,id_problem,id_user,verdict) VALUES("+noSubmit+",'"+tanggal+"',"+id+",1,'Runtime Error')");
+                st.executeUpdate("INSERT INTO submission(id,submission_date,id_problem,id_user,verdict) VALUES("+noSubmit+",'"+tanggal+"',"+id+","+((ResultSet)session
+                        .getAttribute("id_user")).getString("id")+",'Runtime Error')");
                 out.print("Runtime Error");
             }
         }else{
             verdict = "Compile Error";
-            st.executeUpdate("INSERT INTO submission(id,submission_date,id_problem,id_user,verdict) VALUES("+noSubmit+",'"+tanggal+"',"+id+",1,'"+verdict+"')");
+            st.executeUpdate("INSERT INTO submission(id,submission_date,id_problem,id_user,verdict) VALUES("+noSubmit+",'"+tanggal+"',"+id+","+((ResultSet)session
+                        .getAttribute("id_user")).getString("id")+",'"+verdict+"')");
         }
     }catch(Exception e){
         out.print(e.getMessage());

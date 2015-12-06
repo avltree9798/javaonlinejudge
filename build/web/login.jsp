@@ -41,7 +41,7 @@
                         <td colspan="3" align="center">
                             <input type="submit" id="modifiedButton" value="Login"style="background-color: orange;color:white;"/>
                                 or
-                            <input type="reset" id="modifiedButton" value="Cancel" style="background-color: white;color:black;"/>
+                                <input type="button" id="modifiedButton" onclick="window.location.href='register.jsp';" value="Register" style="background-color: white;color:black;"/>
                         </td>
                     </tr>
                 </table>

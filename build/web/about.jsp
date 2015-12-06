@@ -42,7 +42,7 @@
                 <p><b>Accepted</b>: Your program is correct.</p>
                 <p><b>Wrong Answer</b>: Your program produced incorrect output.</p>
                 <p><b>Compile Error</b>: Your program can't be compiled.</p>
-                <p><b>Runtime Error</b>: Your program crashed during execution.</p>
+                <p><b>Runtime Error</b>: Your program crashed during execution (e.g. segmentation fault, floating point exception, etc.)</p>
             </div>
         </div>
     </section>

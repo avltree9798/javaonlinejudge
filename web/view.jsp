@@ -39,7 +39,13 @@
         <div style="display: block; border:1px solid orange; height: auto; padding-bottom: 30px;">
             <center><h1><%=rs.getString("problem_name")%></h1></center>
             Desc:
-            <center><%=rs.getString("problem_desc")%></center>
+                <%
+                    String word = rs.getString("problem_desc");
+                    String words[] = word.split("\n");
+                    for(int i=0;i<words.length;i++){
+                        out.print("<span style='display:block;'>"+words[i]+"</span>");
+                    }
+                %>
             Input :
             <table border="1">
                 <tr>

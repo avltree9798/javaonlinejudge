@@ -35,14 +35,20 @@
     </header>
         <%while(rs.next()){%>
         <section>
-            <div style="display: block; margin-bottom: 40%;">
+            <div style="display: block;">
                 <div id="home">
                 <div id="homeHeader">
                     <p><%=rs.getString("title")%></p>
                     <%=rs.getString("created_at")%>
                 </div>
                 <div>
-                    <%=rs.getString("content")%>
+                     <%
+                    String word = rs.getString("content");
+                    String words[] = word.split("\n");
+                    for(int i=0;i<words.length;i++){
+                        out.print("<div style='display:block;'>"+words[i]+"</div>");
+                    }
+                %>
                 </div>
                 </div>
             </div>

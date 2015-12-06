@@ -63,12 +63,11 @@ header {
 }
 #home{
     border: 1px solid orange;
-    left:20%;
     width:80%;
     height: auto;
-    display: inline-block;
+    min-height: 400px;
+    display: block;
     margin-top:0;
-    position: absolute;
 }
 #homeHeader{
     margin:0;
@@ -93,6 +92,17 @@ header {
     width:50%;
     left:15%;
     height: 300px;
+    display: inline-block;
+    margin-left: 30%;
+    margin-top:0;
+    position: absolute;
+}
+#register{
+    top:20px;
+    border: 1px solid orange;
+    width:50%;
+    left:15%;
+    height: 350px;
     display: inline-block;
     margin-left: 30%;
     margin-top:0;

@@ -1,7 +1,7 @@
 <%@include file="controller/Connect.jsp"%>
 <%@page import="java.sql.ResultSet"%>
 <%
-    ResultSet rs = st.executeQuery("SELECT s.id,username,verdict,problem_name FROM submission s JOIN user u ON s.id_user = u.id JOIN problem p ON s.id_problem = p.id order by s.id desc");
+    ResultSet rs = st.executeQuery("SELECT s.id,username,verdict,problem_name FROM submission s JOIN user u ON s.id_user = u.id JOIN problem p ON s.id_problem = p.id order by s.id desc limit 35");
 %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">

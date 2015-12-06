@@ -28,11 +28,51 @@
                 %>
                 <%if(session.getAttribute("id_user")==null){out.print("<li><a href='login.jsp'>Login</a></li>");}else{out.print(((ResultSet)session.getAttribute("id_user")).getString("username"));}%>
             </ul>
-        </nav>
+        </nav>  
     </header>
     <section>
-        <form>
-            
+        <form method="POST" action="controller/doCreate.jsp">
+            <table>
+                <tr>
+                    <td colspan="3"><center><h3>Create New Problem</h3></center></td>
+                </tr>
+                <tr>
+                    <td valign="top">Problem Name</td>
+                    <td valign="top">:</td>
+                    <td valign="top"><input type="text" name="problem_name" placeholder="ex : Prime Number"/></td>
+                </tr>
+                <tr>
+                    <td valign="top">Problem Description</td>
+                    <td valign="top">:</td>
+                    <td valign="top"><textarea name="problem_desc" rows="10" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td valign="top">Sample Input</td>
+                    <td valign="top">:</td>
+                    <td valign="top"><textarea name="sample_input" rows="10" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td valign="top">Sample Output</td>
+                    <td valign="top">:</td>
+                    <td valign="top"><textarea name="sample_output" rows="10" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td valign="top">Test Input</td>
+                    <td valign="top">:</td>
+                    <td valign="top"><textarea name="test_input" rows="10" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td valign="top">Test Output</td>
+                    <td valign="top">:</td>
+                    <td valign="top"><textarea name="test_output" rows="10" cols="50"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="submit" value="Submit Problem"/>
+                        <input type="reset"/>
+                    </td>
+                </tr>
+            </table>
         </form>
     </section>
         <footer>

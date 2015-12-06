@@ -23,12 +23,12 @@
         </nav>
     </header>
     <section>
-        <form method="POST" action="controller/doLogin.jsp">
+        <form method="POST" action="controller/doRegister.jsp">
         <div id="logo">
         </div>
-        <div id="login">
+        <div id="register">
             <div id="headSection">
-                <b>Login</b>
+                <b>Register</b>
             </div>
             <table style="margin-top:15%;" align="center">
                     <tr>
@@ -38,10 +38,16 @@
                         <td><input type="password" name="password" placeholder="Password" id="modified"/></td>
                     </tr>
                     <tr>
+                        <td><input type="text" name="name" placeholder="Fullname" id="modified"/></td>
+                    </tr>
+                    <tr>
+                        <td><input type="email" name="email" placeholder="Email" id="modified"/></td>
+                    </tr>
+                    <tr>
                         <td colspan="3" align="center">
-                            <input type="submit" id="modifiedButton" value="Login"style="background-color: orange;color:white;"/>
+                            <input type="submit" id="modifiedButton" value="Register"style="background-color: orange;color:white;"/>
                                 or
-                                <input type="button" id="modifiedButton" onclick="window.location.href='register.jsp';" value="Register" style="background-color: white;color:black;"/>
+                                <input type="button" id="modifiedButton" onclick="window.location.href='login.jsp';" value="Login" style="background-color: white;color:black;"/>
                         </td>
                     </tr>
                 </table>
