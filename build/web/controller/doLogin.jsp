@@ -12,6 +12,6 @@
         session.setAttribute("id_user", rs);
         response.sendRedirect("../index.jsp");
     }else{
-        response.sendRedirect("../login.jsp?err=Username or Password wrong");
+        response.sendRedirect("../login.jsp?err=Wrong username or password");
     }
 %>

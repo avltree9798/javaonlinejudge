@@ -30,11 +30,12 @@
     rs2.next();
     String stdin = rs2.getString("test_input");
     String pathToWebRoot = application.getRealPath("/");
-    String dir = pathToWebRoot+"/WEB-INF/classes/"+noSubmit+"/";
+    String dir = pathToWebRoot+"/submission/"+noSubmit+"/";
     File userDir=new File(dir);
     userDir.mkdir();
+    String verdict="";
     try{
-        String verdict="";
+        
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         Calendar cal = Calendar.getInstance();
         String tanggal = dateFormat.format(cal.getTime());
@@ -81,5 +82,7 @@
     }catch(Exception e){
         out.print(e.getMessage());
     }
+out.print(verdict);
     response.sendRedirect("submission.jsp");
 %>
+

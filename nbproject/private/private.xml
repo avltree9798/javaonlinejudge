@@ -3,16 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/root/NetBeansProjects/Tongjudge/web/login.jsp</file>
-            <file>file:/root/NetBeansProjects/Tongjudge/web/index.jsp</file>
-            <file>file:/root/NetBeansProjects/Tongjudge/web/problem.jsp</file>
-            <file>file:/root/NetBeansProjects/Tongjudge/web/doCompile.jsp</file>
-            <file>file:/root/NetBeansProjects/Tongjudge/web/testindex.jsp</file>
-            <file>file:/root/NetBeansProjects/Tongjudge/web/about.jsp</file>
-            <file>file:/root/NetBeansProjects/Tongjudge/web/submit.jsp</file>
-            <file>file:/root/NetBeansProjects/Tongjudge/web/css/style.css</file>
-            <file>file:/root/NetBeansProjects/Tongjudge/web/submission.jsp</file>
-            <file>file:/root/NetBeansProjects/Tongjudge/web/view.jsp</file>
+            <file>file:/root/NetBeansProjects/Tongjudge/web/createproblem.jsp</file>
         </group>
     </open-files>
 </project-private>

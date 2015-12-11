@@ -21,11 +21,11 @@
                 <%
                     if(session.getAttribute("id_user")!=null){
                         if(((ResultSet)session.getAttribute("id_user")).getString("role").equals("1")){
-                            out.print("<li><a href='createproblem.jsp'>Create Problem</a></li>");
+                            out.print("<li><a href='announcement.jsp'>Create Announcement</a></li><li><a href='createproblem.jsp'>Create Problem</a></li>");
                         }
                     }
                 %>
-                <%if(session.getAttribute("id_user")==null){out.print("<li><a href='login.jsp'>Login</a></li>");}else{out.print(((ResultSet)session.getAttribute("id_user")).getString("username"));}%>
+                <%if(session.getAttribute("id_user")==null){out.print("<li><a href='login.jsp'>Login</a></li>");}else{out.print("<li><a href='editprofile.jsp'>"+((ResultSet)session.getAttribute("id_user")).getString("username")+"</a></li><li><a href='logout.jsp'>Logout</a></li>");}%>
             </ul>
         </nav>
     </header>

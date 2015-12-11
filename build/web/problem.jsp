@@ -25,11 +25,11 @@
                 <%
                     if(session.getAttribute("id_user")!=null){
                         if(((ResultSet)session.getAttribute("id_user")).getString("role").equals("1")){
-                            out.print("<li><a href='createproblem.jsp'>Create Problem</a></li>");
+                            out.print("<li><a href='announcement.jsp'>Create Announcement</a></li><li><a href='createproblem.jsp'>Create Problem</a></li>");
                         }
                     }
                 %>
-                <%if(session.getAttribute("id_user")==null){out.print("<li><a href='login.jsp'>Login</a></li>");}else{out.print(((ResultSet)session.getAttribute("id_user")).getString("username"));}%>
+                <%if(session.getAttribute("id_user")==null){out.print("<li><a href='login.jsp'>Login</a></li>");}else{out.print("<li><a href='editprofile.jsp'>"+((ResultSet)session.getAttribute("id_user")).getString("username")+"</a></li><li><a href='logout.jsp'>Logout</a></li>");}%>
             </ul>
         </nav>
     </header>
@@ -41,7 +41,7 @@
             </div>
             <% while(rs.next()){
             %>
-            <div style="border-bottom: 1px solid lightgray;" onclick="window.location.href='view.jsp?id=<%=rs.getString("id")%>'">
+            <div style="cursor: pointer;border-bottom: 1px solid lightgray;" onclick="window.location.href='view.jsp?id=<%=rs.getString("id")%>'">
                     <span style="width: 100%; margin-right: 100px;  "><%=rs.getString("id")%></span>
                     <span style="width: 50%;"><%=rs.getString("problem_name")%></span>
             </div>
